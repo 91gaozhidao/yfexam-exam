@@ -49,7 +49,7 @@ CREATE TABLE `el_exam` (
 -- Records of el_exam
 -- ----------------------------
 BEGIN;
-INSERT INTO `el_exam` (`id`, `title`, `content`, `open_type`, `state`, `time_limit`, `start_time`, `end_time`, `create_time`, `update_time`, `total_score`, `total_time`, `qualify_score`) VALUES ('1587621704140427265', '【云帆演示】考试', '【云帆演示】考试', 1, 0, 0, NULL, NULL, '2022-11-02 09:44:46', '2022-11-02 09:44:46', 100, 30, 60);
+INSERT INTO `el_exam` (`id`, `title`, `content`, `open_type`, `state`, `time_limit`, `start_time`, `end_time`, `create_time`, `update_time`, `total_score`, `total_time`, `qualify_score`) VALUES ('1587621704140427265', '【USTC演示】考试', '【USTC演示】考试', 1, 0, 0, NULL, NULL, '2022-11-02 09:44:46', '2022-11-02 09:44:46', 100, 30, 60);
 COMMIT;
 
 -- ----------------------------
@@ -438,7 +438,7 @@ CREATE TABLE `el_repo` (
 -- Records of el_repo
 -- ----------------------------
 BEGIN;
-INSERT INTO `el_repo` (`id`, `code`, `title`, `remark`, `create_time`, `update_time`) VALUES ('1587622451624120321', '', '【云帆】演示题库', '【云帆】演示题库', '2022-11-02 09:47:44', '2022-11-02 09:47:44');
+INSERT INTO `el_repo` (`id`, `code`, `title`, `remark`, `create_time`, `update_time`) VALUES ('1587622451624120321', '', '【USTC】演示题库', '【USTC】演示题库', '2022-11-02 09:47:44', '2022-11-02 09:47:44');
 COMMIT;
 
 -- ----------------------------
