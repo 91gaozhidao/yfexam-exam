@@ -1,28 +1,26 @@
 <template>
   <div class="app-container">
-    <el-row :gutter="20">
-      <el-col :span="16">
-        <el-card class="box">
+    <el-row :gutter="0">
+      <el-col :span="24">
+        <el-card class="box full-width">
           <div slot="header" class="clearfix">
             <span>项目信息</span>
-            <el-button style="float: right; padding: 3px 0; font-size: 12px" type="text"
-              >系统版本：{{ version }}</el-button
-            >
+          </div>
+          <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+            <img src="@/assets/image.png" style="width: 360px; height: auto" />
           </div>
 
           <div style="line-height: 32px">
             <div class="title" style="padding-top: 0px">系统介绍</div>
-            USTC在线考试系统是一款基于SpringBoot+Vue开发的考试系统。该项目包含在线考试、用户体系、错题训练、考试规则、智能算分等考试功能，流程通畅。
+            USTC考试管理系统基于SpringBoot+Vue开发，包含在线考试、用户体系、错题训练、考试规则、智能算分等考试功能。
 
             <div class="title">技术栈</div>
             <div class="tags">
               <el-tag>SpringBoot</el-tag>
               <el-tag>Shiro</el-tag>
               <el-tag>MyBatis Plus</el-tag>
-              <el-tag>Redis</el-tag>
               <el-tag>JWT</el-tag>
               <el-tag>Vue</el-tag>
-              <el-tag>Vue2</el-tag>
               <el-tag>ElementUI</el-tag>
             </div>
 
@@ -51,51 +49,6 @@
           </div>
         </el-card>
       </el-col>
-      <el-col :span="8">
-        <el-card class="box">
-          <div slot="header" class="clearfix">
-            <span>维护信息</span>
-          </div>
-
-          <div>
-            <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
-              <img src="@/assets/image.png" style="width: 360px; height: auto" />
-            </div>
-            <div class="title" style="padding-top: 0px">联系我们</div>
-            <div style="line-height: 28px">
-              <div style="margin-bottom: 10px">
-                <i class="el-icon-user" style="margin-right: 5px"></i>
-                <span style="font-weight: bold">维护人员：</span>
-                <span>刘畅 林晖祖 高宇轩 刘雨桐 曾经纬 张远卓 黄胤臻 刘擎</span>
-              </div>
-
-              <div style="margin-bottom: 10px">
-                <i class="el-icon-mobile-phone" style="margin-right: 5px"></i>
-                <span style="font-weight: bold">联系电话：</span>
-                <span>123-1234-1234</span>
-              </div>
-
-              <div style="margin-bottom: 10px">
-                <i class="el-icon-message" style="margin-right: 5px"></i>
-                <span style="font-weight: bold">电子邮箱：</span>
-                <a href="mailto:support@example.com">support@mail.ustc.edu.cn</a>
-              </div>
-
-              <div style="margin-bottom: 10px">
-                <i class="el-icon-location-outline" style="margin-right: 5px"></i>
-                <span style="font-weight: bold">联系地址：</span>
-                <span>安徽省合肥市蜀山区高新区复兴路100号</span>
-              </div>
-            </div>
-
-            <div class="title">工作时间</div>
-            <div>
-              <div>周一至周五：09:00 - 18:00</div>
-              <div>周六至周日：如有紧急情况请拨打手机</div>
-            </div>
-          </div>
-        </el-card>
-      </el-col>
     </el-row>
   </div>
 </template>
@@ -121,9 +74,13 @@ export default {
 
 <style scoped>
 .box {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   font-size: 14px;
   line-height: 28px;
+}
+
+.box.full-width {
+  width: 100%;
 }
 .title {
   font-size: 18px;
