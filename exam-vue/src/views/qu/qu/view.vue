@@ -95,7 +95,8 @@ export default {
       })
     },
     onCancel() {
-      this.$router.push({ name: 'ListTran' })
+      //this.$router.push({ name: 'ListTran' })
+      this.$router.push({ name: 'BookList' })
     }
 
   }
