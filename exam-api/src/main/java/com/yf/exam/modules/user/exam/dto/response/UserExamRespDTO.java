@@ -6,13 +6,13 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
-* <p>
-* 考试记录数据传输类
-* </p>
-*
-* @author 聪明笨狗
-* @since 2020-09-21 15:13
-*/
+ * <p>
+ * 考试记录数据传输类
+ * </p>
+ *
+ * @author 聪明笨狗
+ * @since 2020-09-21 15:13
+ */
 @Data
 @ApiModel(value="考试记录", description="考试记录")
 public class UserExamRespDTO extends UserExamDTO {
@@ -25,5 +25,9 @@ public class UserExamRespDTO extends UserExamDTO {
 
     @ApiModelProperty(value = "人员名称", required=true)
     private String realName;
-    
+
+    @ApiModelProperty(value = "最低分数", required=true)
+    private Integer minScore;
+    @ApiModelProperty(value = "及格分数", required=true)
+    private Integer qualifyScore;
 }

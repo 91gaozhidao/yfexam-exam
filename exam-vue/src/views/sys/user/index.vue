@@ -163,13 +163,13 @@ export default {
         deleteUrl: '/exam/api/sys/user/delete',
         // 批量操作列表
         multiActions: [
-          {
-            value: 'enable',
-            label: '启用'
-          }, {
-            value: 'disable',
-            label: '禁用'
-          },
+          // {
+          //   value: 'enable',
+          //   label: '启用'
+          // }, {
+          //   value: 'disable',
+          //   label: '禁用'
+          // },
           {
             value: 'delete',
             label: '删除'
